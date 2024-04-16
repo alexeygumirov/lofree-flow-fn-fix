@@ -3,7 +3,7 @@
 The issue with the Lofree Flow keyboard is that it cannot recognize Linux system correctly.
 This causes Fn keys behave only like media keys. And it does not allow switching to the Fn mode (Fn + Lock).
 
-This little script allows to fix this issue every time it occures. In my case every time I switch off and switch on the Lofree Flow keyboard, it forgets the settings and I have to run this script again.
+This little script fixes this issue. In my case every time I switch off and switch on the Lofree Flow keyboard, it forgets the settings and I have to run it.
 
 This script just changes the Fn mode directly in the keyboard parameters file: `/sys/module/hid_apple/parameters/fnmode`.
 - Value **1** means Fn lock is off: default action of the F1, F2, ... keys is media control.
