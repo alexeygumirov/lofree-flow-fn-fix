@@ -5,7 +5,14 @@ This causes Fn keys behave only like media keys and switching to the Fn mode (Fn
 
 This little script allows to fix this issue every time it occures. In my case every time I switch off and switch on the Lofree Flow keyboard, it forgets the settings and I have to run this script again.
 
-Script content:
+## How to use
+
+1. Download script file
+2. Make it executable `chmod +x lofreemodefix`.
+3. Run it: `./lofreemodefix`
+
+Or just make your own script file with the same content:
+
 ```sh
 #!/bin/sh
 
