@@ -1,7 +1,7 @@
 # Fix for the Lofree Flow keyboard Fn keys on Linux
 
 The issue with the Lofree Flow keyboard is that it cannot recognize Linux system correctly.
-This causes Fn keys behave only like media keys and switching to the Fn mode (Fn + Lock) does not work.
+This causes Fn keys behave only like media keys. And it does not allow switching to the Fn mode (Fn + Lock).
 
 This little script allows to fix this issue every time it occures. In my case every time I switch off and switch on the Lofree Flow keyboard, it forgets the settings and I have to run this script again.
 
