@@ -5,6 +5,10 @@ This causes Fn keys behave only like media keys and switching to the Fn mode (Fn
 
 This little script allows to fix this issue every time it occures. In my case every time I switch off and switch on the Lofree Flow keyboard, it forgets the settings and I have to run this script again.
 
+This script just changes the Fn mode directly in the keyboard parameters file: `/sys/module/hid_apple/parameters/fnmode`.
+- Value **1** means Fn lock is off: default action of the Fn keys is media control.
+- Value **2** means Fn lock is on: default action of the Fn keys is standard Fn key action (F1, F2...F12). And media control works by pressing Fn + F1, Fn + F2, and so on.
+
 ## How to use
 
 1. Download script file: `wget https://raw.githubusercontent.com/alexeygumirov/lofree-flow-fn-fix/main/lofreemodefix`
@@ -28,3 +32,5 @@ echo "Done!"
 echo
 echo "You can set keyboard back to Windows/Android mode by pressing Fn + N"
 ```
+
+Make it executable and run it.
