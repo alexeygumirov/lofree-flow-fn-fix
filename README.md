@@ -7,7 +7,7 @@ This little script allows to fix this issue every time it occures. In my case ev
 
 ## How to use
 
-1. Download script file
+1. Download script file: `wget https://raw.githubusercontent.com/alexeygumirov/lofree-flow-fn-fix/main/lofreemodefix`
 2. Make it executable `chmod +x lofreemodefix`.
 3. Run it: `./lofreemodefix`
 
