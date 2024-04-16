@@ -7,7 +7,7 @@ This little script allows to fix this issue every time it occures. In my case ev
 
 This script just changes the Fn mode directly in the keyboard parameters file: `/sys/module/hid_apple/parameters/fnmode`.
 - Value **1** means Fn lock is off: default action of the F1, F2, ... keys is media control.
-- Value **2** means Fn lock is on: default action of the Fn keys is standard Fn key action (F1, F2...F12). And media control works by pressing Fn + F1, Fn + F2, and so on.
+- Value **2** means Fn lock is on: default action of the function keys is a standard function key action (F1, F2...F12). And media control works by pressing Fn + F1, Fn + F2, and so on.
 
 ## How to use
 
