@@ -22,7 +22,7 @@ Or just make your own script file with the same content:
 
 echo "Fixing Lofree Fn Mode"
 echo
-echo "Please swtich keyboard into the MacOS/iOS mode: Press Fn + M"
+echo "Please switch keyboard into the MacOS/iOS mode: Press Fn + M"
 echo 
 read -p "Press any key to continue... " PRESSKEY
 echo
