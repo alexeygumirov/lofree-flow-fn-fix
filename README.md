@@ -8,8 +8,7 @@ This causes Fn keys behave only like media keys. And it does not allow switching
 This method provides you ability to keep this config persistent on your Linux system.
 If you use Lofree via USB cable or via Bluetooth connection - this configuration fixes both.
 
-What is needed - to create a file in the `/etc/modprobe.d` directory and add an option to set for the keyboard. This option will be applied on every system boot.
-E.g. file name is `20_lofree_fn_mode_fix.conf`
+What is needed - to create a file in the `/etc/modprobe.d` directory and to set Fn mode for the keyboard.
 
 ```sh
 echo "options hid_apple fnmode=2" | sudo tee /etc/modprobe.d/20_lofree_fn_mode_fix.conf
