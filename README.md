@@ -14,6 +14,8 @@ What is needed - to create a file in the `/etc/modprobe.d` directory and to set 
 echo "options hid_apple fnmode=2" | sudo tee /etc/modprobe.d/20_lofree_fn_mode_fix.conf
 ```
 
+Reboot.
+
 ## Fix 2: script (non-persistent)
 
 This script fixes issue but only for the current connection. You shall run this script every time you boot your system or connect/reconnect your keyboard.
