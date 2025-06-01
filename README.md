@@ -3,7 +3,21 @@
 The issue with the Lofree Flow keyboard is that it cannot recognize Linux system correctly.
 This causes Fn keys behave only like media keys. And it does not allow switching to the Fn mode (Fn + Lock).
 
-This little script fixes this issue. In my case every time I switch off and switch on the Lofree Flow keyboard, it forgets the settings and I have to run it.
+## Fix 1: persistent
+
+This method provides you ability to keep this config persistent on your Linux system.
+If you use Lofree via USB cable or via Bluetooth connection - this configuration fixes both.
+
+What is needed - to create a file in the `/etc/modprobe.d` directory and add an option to set for the keyboard. This option will be applied on every system boot.
+E.g. file name is `20_lofree_fn_mode_fix.conf`
+
+```sh
+echo "options hid_apple fnmode=2" | sudo tee /etc/modprobe.d/20_lofree_fn_mode_fix.conf
+```
+
+## Fix 2: script (non-persistent)
+
+This script fixes issue but only for the current connection. You shall run this script every time you boot your system or connect/reconnect your keyboard.
 
 This script just changes the Fn mode directly in the keyboard parameters file: `/sys/module/hid_apple/parameters/fnmode`.
 - Value **1** means Fn lock is off: default action of the F1, F2, ... keys is media control.
