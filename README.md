@@ -42,7 +42,7 @@ echo
 read -p "Press any key to continue... " PRESSKEY
 echo
 echo "Setting Lofree Fn Mode to 2"
-sudo sh -c 'echo 2 > /sys/module/hid_apple/parameters/fnmode'
+echo 2 | sudo tee /sys/module/hid_apple/parameters/fnmode
 echo "Done!"
 echo
 echo "You can set keyboard back to Windows/Android mode by pressing Fn + N"
