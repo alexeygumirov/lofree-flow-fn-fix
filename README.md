@@ -3,6 +3,8 @@
 The issue with the Lofree Flow keyboard is that it cannot recognize Linux system correctly.
 This causes Fn keys behave only like media keys. And it does not allow switching to the Fn mode (Fn + Lock).
 
+> Note: You can read about modified parameter here: https://wiki.archlinux.org/title/Apple_Keyboard
+
 ## Fix 1: persistent
 
 This method provides you ability to keep this config persistent on your Linux system.
