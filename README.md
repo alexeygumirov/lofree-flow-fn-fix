@@ -26,6 +26,9 @@ This script just changes the Fn mode directly in the keyboard parameters file: `
 - Value **1** means Fn lock is off: default action of the F1, F2, ... keys is media control.
 - Value **2** means Fn lock is on: default action of the function keys is a standard function key action (F1, F2...F12). And media control works by pressing Fn + F1, Fn + F2, and so on.
 
+If your keyboard has an ISO layout but is being automatically detected as an ANSI keyboard, then you will also want to change `/sys/module/hid_apple/parameters/iso_layout` from `-1` (Auto) to `1` (ISO).
+This will fix some keys such as the less-than key being swapped.
+
 ## How to use
 
 1. Download script file: `wget https://raw.githubusercontent.com/alexeygumirov/lofree-flow-fn-fix/main/lofreemodefix`
