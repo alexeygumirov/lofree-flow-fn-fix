@@ -16,7 +16,19 @@ What is needed - to create a file in the `/etc/modprobe.d` directory and to set 
 echo "options hid_apple fnmode=2" | sudo tee /etc/modprobe.d/20_lofree_fn_mode_fix.conf
 ```
 
+Rebuilding the initramfs
+
+```sh
+sudo update-initramfs -u -k all
+```
+
 Reboot.
+
+Run this and make sure you see 2 to confirm it is working now.
+
+```sh
+cat /sys/module/hid_apple/parameters/fnmode
+```
 
 ## Fix 2: script (non-persistent)
 
@@ -51,3 +63,4 @@ echo "You can set keyboard back to Windows/Android mode by pressing Fn + N"
 ```
 
 Make it executable and run it.
+
